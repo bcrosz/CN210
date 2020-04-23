@@ -1,1 +1,2 @@
-# CN210
+ # สรุปวิชา 
+ # CN210 Computer Architecture
