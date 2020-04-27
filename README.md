@@ -134,7 +134,9 @@
  [คลิปงานครั้งที่ 4 การทำงานคำสั่ง lw ใน Multi Cycle](https://www.youtube.com/watch?v=9pEuQuDXgGQ)
  
  ## สรุปเนื้อหาการบ้านครั้งที่ 5
+ 
  **การทำงานของคำสั่ง beq ใน Multi Cycle**
+ 
  ![image](https://i.imgur.com/mWXHWpT.png)
  **รูปแบบคำสั่ง beq $rs,$rt,$offset**
   ขั้นตอนการทำงานคำสั่ง beq หรือ branch on equal มีทั้งหมด 3 ขั้นตอนดังนี้
