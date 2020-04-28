@@ -150,6 +150,7 @@ MIPS คอมพิวเตอร์ชนิด RISC ผลิตโดย MI
  **การทำงานของคำสั่ง beq ใน Multi Cycle**
  
  ![image](https://i.imgur.com/mWXHWpT.png)
+ 
  **รูปแบบคำสั่ง beq $rs,$rt,$offset**
   ขั้นตอนการทำงานคำสั่ง beq หรือ branch on equal มีทั้งหมด 3 ขั้นตอนดังนี้
     
@@ -165,8 +166,11 @@ MIPS คอมพิวเตอร์ชนิด RISC ผลิตโดย MI
 ### State Machine ของคำสั่ง R-Type
 
 ![image](https://image1.slideserve.com/3211244/the-four-stages-of-r-format-n.jpg)
+ 
  #### มีทั้งหมด 4 Cycle ด้วยกันดังนี้
+ 
  ### Cycle 1 Instruction Fetch
+ 
  ![stateno1](https://image1.slideserve.com/3211244/slide21-n.jpg)
  
  **จากรูปตัวหนังสือสีแดงคือคำสั่งที่ทำงานใน cycle นี้**
@@ -180,6 +184,7 @@ MIPS คอมพิวเตอร์ชนิด RISC ผลิตโดย MI
     PCWrite = 1, PCSource = 1 นำผลลัพธ์การคำนวณเขียนทับที่ PC = PC + 4
     
 ### Cycle 2 Decode & Register Fetch 
+
 ![image](https://image1.slideserve.com/3211244/slide23-n.jpg)
 
 **จากรูปตัวหนังสือสีแดงคือคำสั่งที่ทำงานใน cycle นี้**
@@ -188,6 +193,7 @@ MIPS คอมพิวเตอร์ชนิด RISC ผลิตโดย MI
     ALUSrcB = 3 คือ Mux เลือกค่าจาก 3 ซึ่งคือ Offset
     ALUop = 0 คือ ALUop จะทำการควบคุมคำสั่ง ADD
 ### Cycle 3 R-Format Execution
+
 ![image](https://image1.slideserve.com/3211244/slide25-n.jpg)
  
  **จากรูปตัวหนังสือสีแดงคือคำสั่งที่ทำงานใน cycle นี้**
@@ -196,6 +202,7 @@ MIPS คอมพิวเตอร์ชนิด RISC ผลิตโดย MI
      ALUSrcB = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ $rt
      ALUop = 2 คือ ALUop จะทำการควบคุมคำสั่งให้เป็นไปตามคำสั่งใน IR
 ### Cycle 4 R-Format Write Register
+
 ![image](https://image1.slideserve.com/3211244/slide27-n.jpg)
  
  **จากรูปตัวหนังสือสีแดงคือคำสั่งที่ทำงานใน cycle นี้**
