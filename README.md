@@ -145,9 +145,9 @@ MIPS คอมพิวเตอร์ชนิด RISC ผลิตโดย MI
 ### ส่งการบ้านครั้งที่ 4
  [คลิปงานครั้งที่ 4 การทำงานคำสั่ง lw ใน Multi Cycle](https://www.youtube.com/watch?v=9pEuQuDXgGQ)
  
- ## สรุปเนื้อหาการบ้านครั้งที่ 5
+## สรุปเนื้อหาการบ้านครั้งที่ 5
  
- **การทำงานของคำสั่ง beq ใน Multi Cycle**
+**การทำงานของคำสั่ง beq ใน Multi Cycle**
  
  ![image](https://i.imgur.com/mWXHWpT.png)
  
@@ -167,9 +167,9 @@ MIPS คอมพิวเตอร์ชนิด RISC ผลิตโดย MI
 
 ![image](https://image1.slideserve.com/3211244/the-four-stages-of-r-format-n.jpg)
  
- #### มีทั้งหมด 4 Cycle ด้วยกันดังนี้
+#### มีทั้งหมด 4 Cycle ด้วยกันดังนี้
  
- ### Cycle 1 Instruction Fetch
+### Cycle 1 Instruction Fetch
  
  ![stateno1](https://image1.slideserve.com/3211244/slide21-n.jpg)
  
@@ -192,6 +192,7 @@ MIPS คอมพิวเตอร์ชนิด RISC ผลิตโดย MI
     ALUSrcA = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ PC
     ALUSrcB = 3 คือ Mux เลือกค่าจาก 3 ซึ่งคือ Offset
     ALUop = 0 คือ ALUop จะทำการควบคุมคำสั่ง ADD
+
 ### Cycle 3 R-Format Execution
 
 ![image](https://image1.slideserve.com/3211244/slide25-n.jpg)
@@ -201,6 +202,7 @@ MIPS คอมพิวเตอร์ชนิด RISC ผลิตโดย MI
      ALUSrcA = 1 คือ Mux เลือกค่าจาก 1 ซึ่งคือ $rs
      ALUSrcB = 0 คือ Mux เลือกค่าจาก 0 ซึ่งคือ $rt
      ALUop = 2 คือ ALUop จะทำการควบคุมคำสั่งให้เป็นไปตามคำสั่งใน IR
+
 ### Cycle 4 R-Format Write Register
 
 ![image](https://image1.slideserve.com/3211244/slide27-n.jpg)
